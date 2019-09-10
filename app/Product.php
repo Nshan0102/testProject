@@ -14,16 +14,16 @@ class Product extends Model
 
     public function category()
     {
-        return $this->hasOne('App\Category');
+        return $this->hasOne('App\Category','id','category_id');
     }
 
     public function manufacturer()
     {
-        return $this->hasOne('App\Manufacturer');
+        return $this->hasOne('App\Manufacturer','id','manufacturer_id');
     }
 
     public function country()
     {
-        return $this->hasOne('App\Country');
+        return $this->hasOne('App\Country','id','country_id');
     }
 }

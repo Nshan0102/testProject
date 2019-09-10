@@ -23,3 +23,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/product', 'AdminController@showCRUD')->name('product');
+
+Route::post('/productUpdate', 'AdminController@productUpdate')->name('productUpdate');
+Route::post('/productDelete', 'AdminController@productDelete')->name('productDelete');
+Route::post('/productLoadMore', 'AdminController@productLoadMore')->name('productLoadMore');
+

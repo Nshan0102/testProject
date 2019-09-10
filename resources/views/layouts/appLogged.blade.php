@@ -4,6 +4,7 @@
         <title>{{ Config::get('app.name') }}</title>
         <meta charset="UTF-8" />
         <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.png' />
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
@@ -15,7 +16,6 @@
         <script src="https://kit.fontawesome.com/677fcbda09.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     </head>
     <body>
     <!--Header-part-->
@@ -92,6 +92,7 @@
         <script src="js/matrix.tables.js"></script>
         <script src="js/jquery.flot.min.js"></script>
         <script src="js/jquery.flot.resize.min.js"></script>
+
         <script type="text/javascript">
             // This function is called from the pop-up menus to transfer to
             // a different page. Ignore if the value returned is a null string:
